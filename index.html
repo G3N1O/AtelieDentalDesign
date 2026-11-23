@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliê Dental Designer | Próteses de Alto Padrão</title>
     <meta name="description" content="Próteses dentárias de alto padrão com estética natural, precisão absoluta e fluxo digital 3D. Atendemos Brasil e Exterior.">
-    <link rel="canonical" href="https://seu-usuario.github.io/atelie-dental-designer/">
+    <link rel="canonical" href="https://g3n1o.github.io/AtelieDentalDesign/">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Configuração de Cores e Fontes do Tailwind -->
+    <!-- Configuração de Cores e Fontes -->
     <script>
         tailwind.config = {
             theme: {
@@ -33,16 +33,22 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CSS Personalizado (Crie a pasta assets/css se for usar) -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 <body class="bg-white text-deepsea font-sans antialiased">
 
     <!-- Header -->
     <header class="flex justify-between items-center px-6 py-4 md:px-12 bg-white shadow-sm sticky top-0 z-50">
-        <div class="text-2xl font-serif font-bold text-navy tracking-wider">
-            ATELIÊ <span class="font-light text-teal">DENTAL</span>
-        </div>
+        <!-- Logo apontando para a pasta assets/Logo -->
+        <a href="#" class="flex items-center gap-2">
+            <img src="assets/Logo/logo.png" alt="Ateliê Dental Designer" class="h-12 w-auto object-contain">
+            <!-- Fallback de texto caso a imagem não carregue -->
+            <div class="text-xl font-serif font-bold text-navy tracking-wider hidden md:block">
+                ATELIÊ <span class="font-light text-teal">DENTAL</span>
+            </div>
+        </a>
+        
         <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide text-navy">
             <a href="#atelie" class="hover:text-cyan transition">O ATELIÊ</a>
             <a href="#tecnologia" class="hover:text-cyan transition">TECNOLOGIA</a>
@@ -73,8 +79,8 @@
                 </div>
             </div>
             <div class="md:w-1/2">
-                <!-- Substitua pelo caminho da sua imagem -->
-                <img src="assets/img/hero-dental.jpg" alt="Sorriso Perfeito" class="rounded-2xl shadow-2xl object-cover h-[450px] w-full border-4 border-white/10">
+                <!-- Imagem Hero apontando para a pasta assets/Portfolio -->
+                <img src="assets/Portfolio/hero.jpg" alt="Sorriso Perfeito" class="rounded-2xl shadow-2xl object-cover h-[450px] w-full border-4 border-white/10">
             </div>
         </div>
     </section>
@@ -109,6 +115,24 @@
         </div>
     </section>
 
+    <!-- NOVA SEÇÃO: Portfólio -->
+    <section id="portfolio" class="py-20 px-6 md:px-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif text-navy mb-4">A Arte em Detalhes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Resultados reais que unem a naturalidade que o paciente deseja com a precisão que a odontologia exige.</p>
+            </div>
+            
+            <!-- Grid de Fotos -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="assets/Portfolio/foto1.jpg" alt="Trabalho 1" class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300">
+                <img src="assets/Portfolio/foto2.jpg" alt="Trabalho 2" class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300">
+                <img src="assets/Portfolio/foto3.jpg" alt="Trabalho 3" class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300">
+                <img src="assets/Portfolio/foto4.jpg" alt="Trabalho 4" class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Final -->
     <section class="bg-deepsea py-20 px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-serif text-white mb-6">Pronto para elevar o nível dos seus casos?</h2>
@@ -124,6 +148,7 @@
         <p class="mt-2">Precisão Absoluta | Estética Natural | Brasil & Internacional</p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <!-- Scripts (Crie a pasta assets/js se for usar) -->
+    <!-- <script src="assets/js/main.js"></script> -->
 </body>
 </html>
